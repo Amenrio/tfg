@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Common package &mdash; TFG  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlc_utils package" href="tlc_utils.html" />
+    <link rel="prev" title="Checkers package" href="master_checker.checkers.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            TFG
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="master_checker.html">Master Checker package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="master_checker.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="master_checker.checkers.html">Checkers package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Common package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="master_checker.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="master_checker.html#module-master_checker.master_checker">Master Checker module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="master_checker.html#module-master_checker.master_checker_ui">Master Checker UI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="master_checker.html#module-master_checker">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tlc_utils.html">tlc_utils package</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TFG</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">src</a></li>
+          <li class="breadcrumb-item"><a href="master_checker.html">Master Checker package</a></li>
+      <li class="breadcrumb-item active">Common package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/master_checker.common.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="common-package">
+<h1>Common package<a class="headerlink" href="#common-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-master_checker.common.condition_manager">
+<span id="common-condition-manager-module"></span><h2>Common Condition Manager module<a class="headerlink" href="#module-master_checker.common.condition_manager" title="Link to this heading"></a></h2>
+<p>ConditionManager is a class to count and store elements meeting a condition
+that may derive in some type of error. Objects of this class will be used
+to populate the checker tables in the UI</p>
+<p>This file is part of TLC (<a class="reference external" href="https://github.com/jtaibo/TallerCreacionTools">https://github.com/jtaibo/TallerCreacionTools</a>).
+Copyright (c) 2022-2023 Universidade da Coruña
+Copyright (c) 2022-2023 Javier Taibo &lt;<a class="reference external" href="mailto:javier&#46;taibo&#37;&#52;&#48;udc&#46;es">javier<span>&#46;</span>taibo<span>&#64;</span>udc<span>&#46;</span>es</a>&gt;</p>
+<p>This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.</p>
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with
+this program. If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorCriteria">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">master_checker.common.condition_manager.</span></span><span class="sig-name descname"><span class="pre">ConditionErrorCriteria</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorCriteria" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Error criteria. This enumeration is used when calling ConditionManager.set_error_level</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorCriteria.ERROR_WHEN_NOT_ONE">
+<span class="sig-name descname"><span class="pre">ERROR_WHEN_NOT_ONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorCriteria.ERROR_WHEN_NOT_ONE" title="Link to this definition"></a></dt>
+<dd><p>An error will be flagged when counter is not one</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorCriteria.ERROR_WHEN_NOT_ZERO">
+<span class="sig-name descname"><span class="pre">ERROR_WHEN_NOT_ZERO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorCriteria.ERROR_WHEN_NOT_ZERO" title="Link to this definition"></a></dt>
+<dd><p>An error will be flagged when counter is not zero</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorCriteria.WARN_WHEN_NOT_ONE">
+<span class="sig-name descname"><span class="pre">WARN_WHEN_NOT_ONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorCriteria.WARN_WHEN_NOT_ONE" title="Link to this definition"></a></dt>
+<dd><p>A warning will be flagged when counter is not one</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorCriteria.WARN_WHEN_NOT_ZERO">
+<span class="sig-name descname"><span class="pre">WARN_WHEN_NOT_ZERO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorCriteria.WARN_WHEN_NOT_ZERO" title="Link to this definition"></a></dt>
+<dd><p>A warning will be flagged when counter is not zero</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorLevel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">master_checker.common.condition_manager.</span></span><span class="sig-name descname"><span class="pre">ConditionErrorLevel</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorLevel" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Error levels: NONE, OK, WARN, ERROR</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorLevel.ERROR">
+<span class="sig-name descname"><span class="pre">ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorLevel.ERROR" title="Link to this definition"></a></dt>
+<dd><p>Error. The value is not acceptable</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorLevel.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorLevel.NONE" title="Link to this definition"></a></dt>
+<dd><p>No error (probably this condition show some information that cannot be right or wrong)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorLevel.OK">
+<span class="sig-name descname"><span class="pre">OK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorLevel.OK" title="Link to this definition"></a></dt>
+<dd><p>Everything is correct</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionErrorLevel.WARN">
+<span class="sig-name descname"><span class="pre">WARN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionErrorLevel.WARN" title="Link to this definition"></a></dt>
+<dd><p>Warning. This situation is not optimal but not a fatal error either</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">master_checker.common.condition_manager.</span></span><span class="sig-name descname"><span class="pre">ConditionManager</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class ConditionManager</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.PROPERTY_FIXABLE">
+<span class="sig-name descname"><span class="pre">PROPERTY_FIXABLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.PROPERTY_FIXABLE" title="Link to this definition"></a></dt>
+<dd><p>Condition is fixable</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.PROPERTY_IGNORABLE">
+<span class="sig-name descname"><span class="pre">PROPERTY_IGNORABLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.PROPERTY_IGNORABLE" title="Link to this definition"></a></dt>
+<dd><p>Condition is ignorable</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.PROPERTY_NONE">
+<span class="sig-name descname"><span class="pre">PROPERTY_NONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.PROPERTY_NONE" title="Link to this definition"></a></dt>
+<dd><p>Condition is fixable</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.PROPERTY_SELECTABLE">
+<span class="sig-name descname"><span class="pre">PROPERTY_SELECTABLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.PROPERTY_SELECTABLE" title="Link to this definition"></a></dt>
+<dd><p>Condition is selectable</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tooltip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selectable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property_flag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.__init__" title="Link to this definition"></a></dt>
+<dd><p>Constructor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Short name (ID, key) of the condition. Defaults to “”.</p></li>
+<li><p><strong>display_name</strong> (<em>str</em><em>, </em><em>optional</em>) – Condition name used to display on UI. Defaults to “”.</p></li>
+<li><p><strong>tooltip</strong> (<em>str</em><em>, </em><em>optional</em>) – Long description used as a tooltip. Defaults to “”.</p></li>
+<li><p><strong>selectable</strong> (<em>bool</em><em>, </em><em>optional</em>) – Condition elements are selectable. Defaults to True.</p></li>
+<li><p><strong>property_flag</strong> (<em>optional</em>) – Type of properties for the element. Default none.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.count">
+<span class="sig-name descname"><span class="pre">count</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.count" title="Link to this definition"></a></dt>
+<dd><p>Number of components matching the condition</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.display_name">
+<span class="sig-name descname"><span class="pre">display_name</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.display_name" title="Link to this definition"></a></dt>
+<dd><p>Condition name to be displayed in the UI</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.elms">
+<span class="sig-name descname"><span class="pre">elms</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.elms" title="Link to this definition"></a></dt>
+<dd><p>List of elements matching the condition</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.error_level">
+<span class="sig-name descname"><span class="pre">error_level</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.error_level" title="Link to this definition"></a></dt>
+<dd><p>Error level</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.get_elements">
+<span class="sig-name descname"><span class="pre">get_elements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.get_elements" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>_description_</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>_type_</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.name" title="Link to this definition"></a></dt>
+<dd><p>Condition name (short name used as an ID)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.property_flag">
+<span class="sig-name descname"><span class="pre">property_flag</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.property_flag" title="Link to this definition"></a></dt>
+<dd><p>Type of element properties</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.reset" title="Link to this definition"></a></dt>
+<dd><p>Reset counter and selection list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.select">
+<span class="sig-name descname"><span class="pre">select</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.select" title="Link to this definition"></a></dt>
+<dd><p>Select components that matched the condition</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.selectable">
+<span class="sig-name descname"><span class="pre">selectable</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.selectable" title="Link to this definition"></a></dt>
+<dd><p>The elements matching the condition can be selected</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.set_elements">
+<span class="sig-name descname"><span class="pre">set_elements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elements</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.set_elements" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>elements</strong> (<em>_type_</em>) – _description_</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.set_error_level">
+<span class="sig-name descname"><span class="pre">set_error_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.set_error_level" title="Link to this definition"></a></dt>
+<dd><p>Set error level following the criteria supplied</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>crit</strong> (<a class="reference internal" href="#master_checker.common.condition_manager.ConditionErrorCriteria" title="master_checker.common.condition_manager.ConditionErrorCriteria"><em>ConditionErrorCriteria</em></a>) – Condition error criteria</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="master_checker.common.condition_manager.ConditionManager.tooltip">
+<span class="sig-name descname"><span class="pre">tooltip</span></span><a class="headerlink" href="#master_checker.common.condition_manager.ConditionManager.tooltip" title="Link to this definition"></a></dt>
+<dd><p>Text to be showed as a tooltip for this condition</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-master_checker.common.custom_menu">
+<span id="common-custom-menu-module"></span><h2>Common Custom Menu module<a class="headerlink" href="#module-master_checker.common.custom_menu" title="Link to this heading"></a></h2>
+<p>_summary_</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="master_checker.common.custom_menu.Menu">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">master_checker.common.custom_menu.</span></span><span class="sig-name descname"><span class="pre">Menu</span></span><a class="headerlink" href="#master_checker.common.custom_menu.Menu" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QMenu</span></code></p>
+<p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>QMenu</strong> (<em>_type_</em>) – _description_</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.custom_menu.Menu.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">page</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toolbox</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checker_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">department_step</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.custom_menu.Menu.__init__" title="Link to this definition"></a></dt>
+<dd><p>x.__init__(…) initializes x; see help(type(x)) for signature</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.custom_menu.Menu.add_fix">
+<span class="sig-name descname"><span class="pre">add_fix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.custom_menu.Menu.add_fix" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.custom_menu.Menu.add_ignore">
+<span class="sig-name descname"><span class="pre">add_ignore</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.custom_menu.Menu.add_ignore" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.custom_menu.Menu.add_recheck">
+<span class="sig-name descname"><span class="pre">add_recheck</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.custom_menu.Menu.add_recheck" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.custom_menu.Menu.add_select">
+<span class="sig-name descname"><span class="pre">add_select</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.custom_menu.Menu.add_select" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-master_checker.common.custom_toolbox">
+<span id="common-custom-toolbox-module"></span><h2>Common Custom Toolbox module<a class="headerlink" href="#module-master_checker.common.custom_toolbox" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="master_checker.common.custom_toolbox.CustomToolbox">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">master_checker.common.custom_toolbox.</span></span><span class="sig-name descname"><span class="pre">CustomToolbox</span></span><a class="headerlink" href="#master_checker.common.custom_toolbox.CustomToolbox" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></p>
+<p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>QWidget</strong> (<em>_type_</em>) – _description_</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.custom_toolbox.CustomToolbox.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">department</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checker_class_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.custom_toolbox.CustomToolbox.__init__" title="Link to this definition"></a></dt>
+<dd><p>x.__init__(…) initializes x; see help(type(x)) for signature</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.common.custom_toolbox.CustomToolbox.create_layout">
+<span class="sig-name descname"><span class="pre">create_layout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.common.custom_toolbox.CustomToolbox.create_layout" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-master_checker.common">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-master_checker.common" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="master_checker.checkers.html" class="btn btn-neutral float-left" title="Checkers package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlc_utils.html" class="btn btn-neutral float-right" title="tlc_utils package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Andres mendez.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

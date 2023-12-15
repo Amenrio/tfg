@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkers package &mdash; TFG  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Common package" href="master_checker.common.html" />
+    <link rel="prev" title="Master Checker package" href="master_checker.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            TFG
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="master_checker.html">Master Checker package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="master_checker.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Checkers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="master_checker.common.html">Common package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="master_checker.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="master_checker.html#module-master_checker.master_checker">Master Checker module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="master_checker.html#module-master_checker.master_checker_ui">Master Checker UI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="master_checker.html#module-master_checker">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tlc_utils.html">tlc_utils package</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TFG</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">src</a></li>
+          <li class="breadcrumb-item"><a href="master_checker.html">Master Checker package</a></li>
+      <li class="breadcrumb-item active">Checkers package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/master_checker.checkers.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="checkers-package">
+<h1>Checkers package<a class="headerlink" href="#checkers-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-master_checker.checkers.basecheck">
+<span id="base-check-module"></span><h2>Base Check module<a class="headerlink" href="#module-master_checker.checkers.basecheck" title="Link to this heading"></a></h2>
+<p>This module Holds the base class which every other checker inherits from</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="master_checker.checkers.basecheck.BaseCheck">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">master_checker.checkers.basecheck.</span></span><span class="sig-name descname"><span class="pre">BaseCheck</span></span><a class="headerlink" href="#master_checker.checkers.basecheck.BaseCheck" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract Checker Function
+Holds every common methods</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.basecheck.BaseCheck.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.basecheck.BaseCheck.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.basecheck.BaseCheck.check_all">
+<span class="sig-name descname"><span class="pre">check_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">public_nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.basecheck.BaseCheck.check_all" title="Link to this definition"></a></dt>
+<dd><p>Abstract function that runs every checker function listed in the ‘data’ dictionary.</p>
+<p>_extended_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>public_nodes</strong> (<em>list</em>) – List of nodes present in the scene to check</p></li>
+<li><p><strong>_func</strong> (<em>_type_</em><em>, </em><em>str</em>) – If _func parameter is given, it will only run that check function, defaults to None</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.basecheck.BaseCheck.check_func">
+<span class="sig-name descname"><span class="pre">check_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">public_nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.basecheck.BaseCheck.check_func" title="Link to this definition"></a></dt>
+<dd><p>Run specific function’s check method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>public_nodes</strong> (<em>list</em>) – List of public nodes to run the check on</p></li>
+<li><p><strong>_func</strong> (<em>string</em>) – basname of the function to run</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.basecheck.BaseCheck.fix_func">
+<span class="sig-name descname"><span class="pre">fix_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.basecheck.BaseCheck.fix_func" title="Link to this definition"></a></dt>
+<dd><p>Run specific function’s fix method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error_list</strong> (<em>list</em>) – List of public nodes that fail the check</p></li>
+<li><p><strong>_func</strong> (<em>string</em>) – basname of the function to run</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.basecheck.BaseCheck.update_object_list">
+<span class="sig-name descname"><span class="pre">update_object_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scene_objects</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.basecheck.BaseCheck.update_object_list" title="Link to this definition"></a></dt>
+<dd><p>Updates self.object list to most recent execution</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>scene_objects</strong> (<em>list</em>) – scene object list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-master_checker.checkers.namingcheck">
+<span id="naming-check-module"></span><h2>Naming Check module<a class="headerlink" href="#module-master_checker.checkers.namingcheck" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">master_checker.checkers.namingcheck.</span></span><span class="sig-name descname"><span class="pre">NamingCheck</span></span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#master_checker.checkers.basecheck.BaseCheck" title="master_checker.checkers.basecheck.BaseCheck"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseCheck</span></code></a></p>
+<p>Naming Check Class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>BaseCheck</strong> (<em>class</em>) – Abstract checker class</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_cameras_id">
+<span class="sig-name descname"><span class="pre">check_cameras_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_cameras_id" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_groups_id">
+<span class="sig-name descname"><span class="pre">check_groups_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_groups_id" title="Link to this definition"></a></dt>
+<dd><p>Checker function
+Chekcs for every node if its a group with a helper function (is_group)
+Then checks if groupId part of name is pipeline compliant
+Sets error level if list_errors is not 0</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_groups_layers_id">
+<span class="sig-name descname"><span class="pre">check_groups_layers_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_groups_layers_id" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_input_connections">
+<span class="sig-name descname"><span class="pre">check_input_connections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_input_connections" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_invalid_characters">
+<span class="sig-name descname"><span class="pre">check_invalid_characters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_invalid_characters" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_layers_naming">
+<span class="sig-name descname"><span class="pre">check_layers_naming</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_layers_naming" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_lights_naming">
+<span class="sig-name descname"><span class="pre">check_lights_naming</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_lights_naming" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_locators_id">
+<span class="sig-name descname"><span class="pre">check_locators_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_locators_id" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_node_fields">
+<span class="sig-name descname"><span class="pre">check_node_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_node_fields" title="Link to this definition"></a></dt>
+<dd><p>Checker function
+Checks for every node if its node Fields are 3
+Sets error level if error_list is not 0</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Error objects</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_node_name">
+<span class="sig-name descname"><span class="pre">check_node_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_node_name" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_nodes_id">
+<span class="sig-name descname"><span class="pre">check_nodes_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_nodes_id" title="Link to this definition"></a></dt>
+<dd><p>Chekcer function
+Checks for every node if nodes_id mathces naming pipeline rules
+Sets error level if error_list is not 0</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_position_field">
+<span class="sig-name descname"><span class="pre">check_position_field</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_position_field" title="Link to this definition"></a></dt>
+<dd><p>Checker function
+Checks for every node if its position_field matches naming pipeline rules
+Sets error level if error_list is not 0</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_rigging_test">
+<span class="sig-name descname"><span class="pre">check_rigging_test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_rigging_test" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_scene_name">
+<span class="sig-name descname"><span class="pre">check_scene_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_scene_name" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_splines_id">
+<span class="sig-name descname"><span class="pre">check_splines_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_splines_id" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_transforms_shapes">
+<span class="sig-name descname"><span class="pre">check_transforms_shapes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_transforms_shapes" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.check_unique_names">
+<span class="sig-name descname"><span class="pre">check_unique_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.check_unique_names" title="Link to this definition"></a></dt>
+<dd><p>Check function
+Searches for PIPE ‘|’ character in node names, if found, adds item to error list
+Error level is setted if error list is not 0</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.fix_node_fields">
+<span class="sig-name descname"><span class="pre">fix_node_fields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error_objects</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.fix_node_fields" title="Link to this definition"></a></dt>
+<dd><p>Fix function
+not implemented yet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>error_objects</strong> (<em>list</em>) – error_objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.fix_position_field">
+<span class="sig-name descname"><span class="pre">fix_position_field</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error_elements</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.fix_position_field" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.get_nice_name">
+<span class="sig-name descname"><span class="pre">get_nice_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.get_nice_name" title="Link to this definition"></a></dt>
+<dd><p>Helper function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name_obj</strong> (<em>str</em>) – Node Name</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of node_fields</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.namingcheck.NamingCheck.is_group">
+<span class="sig-name descname"><span class="pre">is_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.namingcheck.NamingCheck.is_group" title="Link to this definition"></a></dt>
+<dd><p>Helper Function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>node</strong> (<em>str</em>) – Node name</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns if node is group of other transforms and doesnt have shapes as children</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-master_checker.checkers.pipelinecheck">
+<span id="pipeline-check-module"></span><h2>Pipeline Check module<a class="headerlink" href="#module-master_checker.checkers.pipelinecheck" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">master_checker.checkers.pipelinecheck.</span></span><span class="sig-name descname"><span class="pre">PipelineCheck</span></span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#master_checker.checkers.basecheck.BaseCheck" title="master_checker.checkers.basecheck.BaseCheck"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseCheck</span></code></a></p>
+<p>Pipeline Checker Class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>BaseCheck</strong> (<em>Class</em>) – Base Checker Class</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_animation_keys">
+<span class="sig-name descname"><span class="pre">check_animation_keys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_animation_keys" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_blendshapes">
+<span class="sig-name descname"><span class="pre">check_blendshapes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_blendshapes" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_blocked_groups">
+<span class="sig-name descname"><span class="pre">check_blocked_groups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_blocked_groups" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_empty_nodes">
+<span class="sig-name descname"><span class="pre">check_empty_nodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_empty_nodes" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_folder_structure">
+<span class="sig-name descname"><span class="pre">check_folder_structure</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_folder_structure" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_inside_groups">
+<span class="sig-name descname"><span class="pre">check_inside_groups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_inside_groups" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_instanced_nodes">
+<span class="sig-name descname"><span class="pre">check_instanced_nodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_instanced_nodes" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_multiple_shapes">
+<span class="sig-name descname"><span class="pre">check_multiple_shapes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_multiple_shapes" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_namespace">
+<span class="sig-name descname"><span class="pre">check_namespace</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_namespace" title="Link to this definition"></a></dt>
+<dd><p>Checks the scene namespaces (minus defaut ones), sets error level if not zero</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_references">
+<span class="sig-name descname"><span class="pre">check_references</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_references" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_scales">
+<span class="sig-name descname"><span class="pre">check_scales</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_scales" title="Link to this definition"></a></dt>
+<dd><p>Checks every node scale and sets error level if the scale is not (1, 1, 1)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_set_project">
+<span class="sig-name descname"><span class="pre">check_set_project</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_set_project" title="Link to this definition"></a></dt>
+<dd><p>Checks that the last folder of the current setted workspace is pipeline compliant
+sets error if las folder is different from pipeline naming guide</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_unknown_nodes">
+<span class="sig-name descname"><span class="pre">check_unknown_nodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_unknown_nodes" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_user">
+<span class="sig-name descname"><span class="pre">check_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_user" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.check_zero_local_values">
+<span class="sig-name descname"><span class="pre">check_zero_local_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.check_zero_local_values" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.pipelinecheck.PipelineCheck.fix_scales">
+<span class="sig-name descname"><span class="pre">fix_scales</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error_objects</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.pipelinecheck.PipelineCheck.fix_scales" title="Link to this definition"></a></dt>
+<dd><p>Fix function for scale checklist
+Sets transform node scale to 1
+DANGEROUS, ONLY TESTING PURPOSE</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>error_objects</strong> (<em>list</em>) – List of objects setted as errors.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-master_checker.checkers.riggingcheck">
+<span id="rigging-check-module"></span><h2>Rigging Check module<a class="headerlink" href="#module-master_checker.checkers.riggingcheck" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="master_checker.checkers.riggingcheck.RiggingCheck">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">master_checker.checkers.riggingcheck.</span></span><span class="sig-name descname"><span class="pre">RiggingCheck</span></span><a class="headerlink" href="#master_checker.checkers.riggingcheck.RiggingCheck" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#master_checker.checkers.namingcheck.NamingCheck" title="master_checker.checkers.namingcheck.NamingCheck"><code class="xref py py-class docutils literal notranslate"><span class="pre">NamingCheck</span></code></a>, <a class="reference internal" href="#master_checker.checkers.pipelinecheck.PipelineCheck" title="master_checker.checkers.pipelinecheck.PipelineCheck"><code class="xref py py-class docutils literal notranslate"><span class="pre">PipelineCheck</span></code></a></p>
+<p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>NamingCheck</strong> (<em>_type_</em>) – _description_</p></li>
+<li><p><strong>PipelineCheck</strong> (<em>_type_</em>) – _description_</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.riggingcheck.RiggingCheck.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.riggingcheck.RiggingCheck.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.riggingcheck.RiggingCheck.check_joint_naming">
+<span class="sig-name descname"><span class="pre">check_joint_naming</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.riggingcheck.RiggingCheck.check_joint_naming" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="master_checker.checkers.riggingcheck.RiggingCheck.check_rigging_test">
+<span class="sig-name descname"><span class="pre">check_rigging_test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#master_checker.checkers.riggingcheck.RiggingCheck.check_rigging_test" title="Link to this definition"></a></dt>
+<dd><p>TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-master_checker.checkers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-master_checker.checkers" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="master_checker.html" class="btn btn-neutral float-left" title="Master Checker package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="master_checker.common.html" class="btn btn-neutral float-right" title="Common package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Andres mendez.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
